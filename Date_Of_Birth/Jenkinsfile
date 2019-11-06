@@ -41,7 +41,7 @@ pipeline {
         
         stage('Override and Deploy BAR') {
          steps {
-                sh "/buildconductor/iib/run-automation.sh overrideAndDeploy DOB na na na SAMPLE_EG iibadmin password Date_Of_Birth Date_Of_Birth/overrides/development.properties ../brokerFiles-load/DEV/SAMPLE_NODE"
+                sh "/buildconductor/iib/run-automation.sh overrideAndDeploy DOB na na na SAMPLE_EG ../brokerFiles-load/DEV/SAMPLE_NODE.username ../brokerFiles-load/DEV/SAMPLE_NODE.password Date_Of_Birth Date_Of_Birth/overrides/development.properties ../brokerFiles-load/DEV/SAMPLE_NODE"
         
           }
         }       
