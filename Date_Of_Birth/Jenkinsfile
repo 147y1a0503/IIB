@@ -49,14 +49,14 @@ pipeline {
 		steps {
 			script{                        
                     	File sourceFolder = new File("/var/lib/jenkins/workspace/IIB_sample/load/iib-assemblies/bars");
-                    	File  destinationFolder = new File("/var/tmp");                                                   
+                    	File  destinationFolder = new File("/var/tmp/bar");                                                   
                     	File[] listOfFiles = sourceFolder.listFiles();
                     	echo "Files Total: " + listOfFiles.length;  
 
                     	for (File file : listOfFiles) {
                         if (file.isFile()) {
                             echo file.getName()                                                                
-                            Files.copy(Paths.get(file.path), Paths.get("/var/tmp"));                                   
+                            Files.copy(Paths.get(file.path), Paths.get("/var/tmp/bar"));                                   
                        	 }
                     }                  
                 }    
