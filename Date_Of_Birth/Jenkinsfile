@@ -33,7 +33,7 @@ pipeline {
        
         stage('Build BAR') {
             steps {
-                sh "/buildconductor/iib/run-automation.sh build DOB 'Date_Of_Birth Demo''IIB'" 
+                sh "/buildconductor/iib/run-automation.sh build DOB 'Date_Of_Birth Demo'IIB" 
             }
         }   
         
