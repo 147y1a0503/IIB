@@ -47,7 +47,7 @@ pipeline {
         }   
 	 stage('changing the location of bar file'){
 	  steps{
-		    dir ('https://github.com/147y1a0503/IIB.git/BAR')
+		    dir ('https://github.com/147y1a0503/IIB.git')
 		    {
 		    sh '/var/lib/jenkins/workspace/IIB_sample/load/iib-assemblies/bars'
 		    }
